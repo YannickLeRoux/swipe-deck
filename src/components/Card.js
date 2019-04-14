@@ -37,7 +37,6 @@ const CardImage = styled.img`
 `;
 
 const CardHeader = styled.header`
-  padding-top: 32px;
   padding-bottom: 32px;
 `;
 
@@ -50,6 +49,15 @@ const CardHeading = styled.h1`
 const CardBody = styled.div`
   padding-right: 32px;
   padding-left: 32px;
+`;
+
+const CardOptionsNote = styled.small`
+  padding-top: 8px;
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
 `;
 
 const CardButton = styled.button`
@@ -95,7 +103,9 @@ const Card = ({ image, title, body }) => {
       </CardHeader>
       <CardHeading>{title}</CardHeading>
       <CardBody>
-        <CardSection />
+        <CardSection>
+          <CardOptionsNote>Or sign up with</CardOptionsNote>
+        </CardSection>
         <CardSection>
           <CardButton type="button">Sign Up</CardButton>
         </CardSection>
